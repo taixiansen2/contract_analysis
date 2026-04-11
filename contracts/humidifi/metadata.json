@@ -1,0 +1,74 @@
+{
+  "name": "HumidiFi",
+  "program_id": "9H6tua7jkLhdm3w8BvgpTn5LZNU7g4ZynDmCiNN3q6Rp",
+  "sources": [
+    "https://orbmarkets.io/address/9H6tua7jkLhdm3w8BvgpTn5LZNU7g4ZynDmCiNN3q6Rp/history",
+    "https://solscan.io/account/9H6tua7jkLhdm3w8BvgpTn5LZNU7g4ZynDmCiNN3q6Rp",
+    "https://danielandsolana.substack.com/p/inside-humidifis-34-billion-mystery"
+  ],
+  "program_account": {
+    "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "executable": true,
+    "lamports": 102449614,
+    "space": 36
+  },
+  "program_data_account": {
+    "address": "G9S64i58RRWJA28vZiNhnP56Ux4Ef7hfMgHNREnZZSom",
+    "authority": "4p1FfVusdT83PxejTPLEz6ZQ4keN9LVEkKhzSt6PJ5zw",
+    "slot": 410553880,
+    "lamports": 1548718320,
+    "space": 222389
+  },
+  "binary": {
+    "raw_len": 222389,
+    "elf_offset": 45,
+    "elf_len": 222344,
+    "sha256": "dd048655759fa5a37bf7c11eabbf4af637b7bc691a71360e71fbbd6157ea2604",
+    "file": {
+      "command": "file /home/ubuntu/blockchain/contracts/humidifi/program.so",
+      "exit_code": 0,
+      "stdout": "/home/ubuntu/blockchain/contracts/humidifi/program.so: ELF 64-bit LSB shared object, *unknown arch 0x107* version 1 (SYSV), dynamically linked, stripped\n",
+      "stderr": ""
+    },
+    "elf_header": {
+      "command": "readelf -h /home/ubuntu/blockchain/contracts/humidifi/program.so",
+      "exit_code": 0,
+      "stdout": "ELF Header:\n  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 \n  Class:                             ELF64\n  Data:                              2's complement, little endian\n  Version:                           1 (current)\n  OS/ABI:                            UNIX - System V\n  ABI Version:                       0\n  Type:                              DYN (Shared object file)\n  Machine:                           <unknown>: 0x107\n  Version:                           0x1\n  Entry point address:               0x2f08\n  Start of program headers:          64 (bytes into file)\n  Start of section headers:          221768 (bytes into file)\n  Flags:                             0x0\n  Size of this header:               64 (bytes)\n  Size of program headers:           56 (bytes)\n  Number of program headers:         4\n  Size of section headers:           64 (bytes)\n  Number of section headers:         9\n  Section header string table index: 8\n",
+      "stderr": ""
+    },
+    "dynsym": {
+      "command": "readelf -s /home/ubuntu/blockchain/contracts/humidifi/program.so",
+      "exit_code": 0,
+      "stdout": "\nSymbol table '.dynsym' contains 15 entries:\n   Num:    Value          Size Type    Bind   Vis      Ndx Name\n     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND \n     1: 0000000000034888    16 OBJECT  GLOBAL DEFAULT    3 GIT_HASH\n     2: 000000000002c658    72 FUNC    GLOBAL DEFAULT    1 custom_panic\n     3: 0000000000002f08 19056 FUNC    GLOBAL DEFAULT    1 entrypoint\n     4: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_memcmp_\n     5: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_invoke_signed_c\n     6: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_get_last_res[...]\n     7: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_sha256\n     8: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_log_\n     9: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_try_find_pro[...]\n    10: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_memset_\n    11: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_log_data\n    12: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND abort\n    13: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_memcpy_\n    14: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_memmove_\n",
+      "stderr": ""
+    }
+  },
+  "static_hints": {
+    "command": "strings -n 8 /home/ubuntu/blockchain/contracts/humidifi/program.so",
+    "exit_code": 0,
+    "matches": [
+      "Wassertion failed: min <= max/home/runner/work/platform-tools/platform-tools/out/rust/library/core/src/cmp.rsinternal error: entered unreachable code",
+      "division by zerosrc/arith.rscalled `Result::unwrap()` on an `Err` valuefixed point square root of a negative numberinsufficient capacityCapacityError: from_bytesfrom_bytes_mut>src/internal.rsUnable to find a viable program address bump seedsrc/pubkey.rscontract/src/arith.rs",
+      "contract/src/instructions.rspoolv1Invalid Exp valuecontract/src/ops.rscontract/src/routers/dflow.rscontract/src/routers/jupiter.rscontract/src/stateupdate.rs",
+      "0tGIT_HASH:600f8e1443ef87488c0c09f94125fc1bab58efe4disabled ixncontract/src/lib.rsarithmetic operation overflow** PANICKED **"
+    ]
+  },
+  "instruction_clusters": [
+    {
+      "sample_count": 14,
+      "account_count": 3,
+      "data_len": 65,
+      "layout_hint": "1_byte_tag_plus_8x_8byte_fields",
+      "signature": "5zgKzzvrjYL77yzMNxxKHn8HetqGn5EAcVzFCcW18mi12vrupRkk26zCyvPqNMUa8wen9LcKtAYXgcorZAYK7DH3",
+      "memo": null,
+      "error": null,
+      "accounts": [
+        "FksffEqnBRixYGR791Qw2MgdU7zNCpHVFYBL4Fa4qVuH",
+        "9YW7Rc8ongNLedz9YBp5hVYwdEJHuHbQkUf3fZocNkHN",
+        "SysvarC1ock11111111111111111111111111111111"
+      ],
+      "data_hex_prefix": "721c195d9df857b9d98b7923eb12a946ea39e2d71fe79d6e",
+      "data_len_mod_8": 1
+    }
+  ]
+}

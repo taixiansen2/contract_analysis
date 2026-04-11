@@ -1,0 +1,113 @@
+{
+  "name": "GoonFi",
+  "program_id": "goonERTdGsjnkZqWuVjs73BZ3Pb9qoCUdBUL17BnS5j",
+  "sources": [
+    "https://orbmarkets.io/address/goonERTdGsjnkZqWuVjs73BZ3Pb9qoCUdBUL17BnS5j/history",
+    "https://solscan.io/account/goonERTdGsjnkZqWuVjs73BZ3Pb9qoCUdBUL17BnS5j",
+    "https://solana.com/news/understanding-proprietary-amms"
+  ],
+  "program_account": {
+    "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "executable": true,
+    "lamports": 1142441,
+    "space": 36
+  },
+  "program_data_account": {
+    "address": "2yhK81gpQoK2jGKrokGYgt7TLt1yT3DM1DSWkpCHpnML",
+    "authority": "BBvfpKqYovhzEjS4Ch1xZXFdxkaoUiXsujR9kgN1t8iR",
+    "slot": 389267056,
+    "lamports": 908342640,
+    "space": 130381
+  },
+  "binary": {
+    "raw_len": 130381,
+    "elf_offset": 45,
+    "elf_len": 130336,
+    "sha256": "2ffef035202a3642c36251836cfa19ca15ce38b481ed214aa4f33fbf0ac9003c",
+    "file": {
+      "command": "file /home/ubuntu/blockchain/contracts/goonfi/program.so",
+      "exit_code": 0,
+      "stdout": "/home/ubuntu/blockchain/contracts/goonfi/program.so: ELF 64-bit LSB shared object, *unknown arch 0x107* version 1 (SYSV), dynamically linked, stripped\n",
+      "stderr": ""
+    },
+    "elf_header": {
+      "command": "readelf -h /home/ubuntu/blockchain/contracts/goonfi/program.so",
+      "exit_code": 0,
+      "stdout": "ELF Header:\n  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 \n  Class:                             ELF64\n  Data:                              2's complement, little endian\n  Version:                           1 (current)\n  OS/ABI:                            UNIX - System V\n  ABI Version:                       0\n  Type:                              DYN (Shared object file)\n  Machine:                           <unknown>: 0x107\n  Version:                           0x1\n  Entry point address:               0x120\n  Start of program headers:          64 (bytes into file)\n  Start of section headers:          110544 (bytes into file)\n  Flags:                             0x0\n  Size of this header:               64 (bytes)\n  Size of program headers:           56 (bytes)\n  Number of program headers:         4\n  Size of section headers:           64 (bytes)\n  Number of section headers:         9\n  Section header string table index: 8\n",
+      "stderr": ""
+    },
+    "dynsym": {
+      "command": "readelf -s /home/ubuntu/blockchain/contracts/goonfi/program.so",
+      "exit_code": 0,
+      "stdout": "\nSymbol table '.dynsym' contains 12 entries:\n   Num:    Value          Size Type    Bind   Vis      Ndx Name\n     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND \n     1: 000000000000cc90  4688 FUNC    GLOBAL DEFAULT    1 e\n     2: 000000000000fb50     8 FUNC    WEAK   DEFAULT    1 custom_panic\n     3: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_memcpy_\n     4: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_log_\n     5: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_invoke_signed_c\n     6: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_memset_\n     7: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_try_find_pro[...]\n     8: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_get_clock_sysvar\n     9: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_get_rent_sysvar\n    10: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND abort\n    11: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_memcmp_\n",
+      "stderr": ""
+    }
+  },
+  "static_hints": {
+    "command": "strings -n 8 /home/ubuntu/blockchain/contracts/goonfi/program.so",
+    "exit_code": 0,
+    "matches": [
+      "failed to fill whole buffer0123456789Invalid bool representation: src/account_info.rs** NO ALLOCATOR **src/entrypoint/mod.rsfrom_bytesfrom_bytes_mut>src/internal.rsUnable to find a viable program address bump seedsrc/pubkey.rssrc/sysvars/instructions.rssrc/sysvars/rent.rsblacklistprogram/src/instructions/blacklist_trader.rsmarketprogram/src/state/market.rsvault",
+      "0123456789abcdefTargetAlignmentGreaterAndInputNotAlignedOutputSliceWouldHaveSlopSizeMismatchAlignmentMismatch\t/home/runner/work/platform-tools/platform-tools/out/rust/library/alloc/src/slice.rsError: memory allocation failed, out of memoryErrorcapacity overflowalloc/src/raw_vec.rsalloc/src/string.rsa formatting trait implementation returned an error when the underlying stream did notattempt to add with overflowattempt to subtract with overflowattempt to multiply with overflowattempt to shift left with overflow).. <=  (bytes called `Option::unwrap()` on a `None` value but the index is : core/src/fmt/num.rs0x00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899core/src/fmt/mod.rssource slice length () does not match destination slice length (core/src/str/mod.rs[...]begin <= end (`byte index  is not a char boundary; it is inside ) of ` is out of bounds of `core/src/unicode/printable.rs"
+    ]
+  },
+  "instruction_clusters": [
+    {
+      "sample_count": 7,
+      "account_count": 4,
+      "data_len": 34,
+      "layout_hint": "mixed_or_packed",
+      "signature": "2jjtTymLcAPXfmRF1gscyYbAnVRZVAzXQtwKKmiBdMhE61TqPGAVLJkiXfQ4pF5MevGgXKPyxdRFQTG5DkcSfwBC",
+      "memo": null,
+      "error": null,
+      "accounts": [
+        "updapqBoqhn48uaVxD7oKyFVEwEcHmqbgQa1GvHaUuX",
+        "51K91nzD5VyfHkozARsiACKZff241reQ4n8rdnhy6TD1",
+        "11111111111111111111111111111111",
+        "SysvarRent111111111111111111111111111111111"
+      ],
+      "data_hex_prefix": "086d419adc2ae05526e621690441d3f14f2767e996efae71",
+      "data_len_mod_8": 2
+    },
+    {
+      "sample_count": 7,
+      "account_count": 8,
+      "data_len": 17,
+      "layout_hint": "1_byte_tag_plus_2x_8byte_fields",
+      "signature": "3dpx4xYU1HovjqXazeWxYeGgzGYRnhWqUnAfcSXxTnUFy7DHbmhbam6Vpo4RzootT68989rGsu1zB6kygRZdA5B6",
+      "memo": null,
+      "error": null,
+      "accounts": [
+        "updapqBoqhn48uaVxD7oKyFVEwEcHmqbgQa1GvHaUuX",
+        "4uWuh9fC7rrZKrN8ZdJf69MN1e2S7FPpMqcsyY1aof6K",
+        "Drcy6kqmgdm3pDpnhS1spnPvkvqtb6viALRqYgXT3CGf",
+        "7LqTGERBcPREDcDXhKcPreQH7GLJkari1QGECo7NnMav",
+        "pKiUC9hDXv52xqU1p3BKypV9AQjAMgfZUGRnoBsdkKm",
+        "Gsy5Zr7Vxn5KckAbduPHHGR1qzPJ4w3GSYmcinWAkhrC",
+        "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "11111111111111111111111111111111"
+      ],
+      "data_hex_prefix": "04bc68d20b0000000060f3080000000000",
+      "data_len_mod_8": 1
+    },
+    {
+      "sample_count": 4,
+      "account_count": 6,
+      "data_len": 1,
+      "layout_hint": "mixed_or_packed",
+      "signature": "3dpx4xYU1HovjqXazeWxYeGgzGYRnhWqUnAfcSXxTnUFy7DHbmhbam6Vpo4RzootT68989rGsu1zB6kygRZdA5B6",
+      "memo": null,
+      "error": null,
+      "accounts": [
+        "updapqBoqhn48uaVxD7oKyFVEwEcHmqbgQa1GvHaUuX",
+        "4uWuh9fC7rrZKrN8ZdJf69MN1e2S7FPpMqcsyY1aof6K",
+        "pKiUC9hDXv52xqU1p3BKypV9AQjAMgfZUGRnoBsdkKm",
+        "Gsy5Zr7Vxn5KckAbduPHHGR1qzPJ4w3GSYmcinWAkhrC",
+        "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "11111111111111111111111111111111"
+      ],
+      "data_hex_prefix": "09",
+      "data_len_mod_8": 1
+    }
+  ]
+}

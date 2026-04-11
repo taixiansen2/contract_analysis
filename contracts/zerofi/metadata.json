@@ -1,0 +1,78 @@
+{
+  "name": "ZeroFi",
+  "program_id": "ZERor4xhbUycZ6gb9ntrhqscUcZmAbQDjEAtCf4hbZY",
+  "sources": [
+    "https://orbmarkets.io/address/ZERor4xhbUycZ6gb9ntrhqscUcZmAbQDjEAtCf4hbZY/history",
+    "https://solscan.io/account/ZERor4xhbUycZ6gb9ntrhqscUcZmAbQDjEAtCf4hbZY",
+    "https://www.helius.dev/blog/solanas-proprietary-amm-revolution"
+  ],
+  "program_account": {
+    "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "executable": true,
+    "lamports": 1208441,
+    "space": 36
+  },
+  "program_data_account": {
+    "address": "6PFxy3S1LF9juamK4y6bcf3AEdJ47CF9zQV3DbdtMgBm",
+    "authority": "UPgd1zNpfgYRRcudZyubhKPrrYKL7vKRmw25SR6qto5",
+    "slot": 412412008,
+    "lamports": 2962266480,
+    "space": 425485
+  },
+  "binary": {
+    "raw_len": 425485,
+    "elf_offset": 45,
+    "elf_len": 425440,
+    "sha256": "1976f1209e05b9e6f5a8793eb67cf4bf39c0ce0b5642371d22e4688380a2b85b",
+    "file": {
+      "command": "file /home/ubuntu/blockchain/contracts/zerofi/program.so",
+      "exit_code": 0,
+      "stdout": "/home/ubuntu/blockchain/contracts/zerofi/program.so: ELF 64-bit LSB shared object, *unknown arch 0x107* version 1 (SYSV), dynamically linked, stripped\n",
+      "stderr": ""
+    },
+    "elf_header": {
+      "command": "readelf -h /home/ubuntu/blockchain/contracts/zerofi/program.so",
+      "exit_code": 0,
+      "stdout": "ELF Header:\n  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 \n  Class:                             ELF64\n  Data:                              2's complement, little endian\n  Version:                           1 (current)\n  OS/ABI:                            UNIX - System V\n  ABI Version:                       0\n  Type:                              DYN (Shared object file)\n  Machine:                           <unknown>: 0x107\n  Version:                           0x1\n  Entry point address:               0x7418\n  Start of program headers:          64 (bytes into file)\n  Start of section headers:          324448 (bytes into file)\n  Flags:                             0x0\n  Size of this header:               64 (bytes)\n  Size of program headers:           56 (bytes)\n  Number of program headers:         4\n  Size of section headers:           64 (bytes)\n  Number of section headers:         9\n  Section header string table index: 8\n",
+      "stderr": ""
+    },
+    "dynsym": {
+      "command": "readelf -s /home/ubuntu/blockchain/contracts/zerofi/program.so",
+      "exit_code": 0,
+      "stdout": "\nSymbol table '.dynsym' contains 14 entries:\n   Num:    Value          Size Type    Bind   Vis      Ndx Name\n     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND \n     1: 000000000002af18    72 FUNC    GLOBAL DEFAULT    1 custom_panic\n     2: 0000000000007418  4528 FUNC    GLOBAL DEFAULT    1 entrypoint\n     3: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_memcpy_\n     4: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_log_\n     5: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_try_find_pro[...]\n     6: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_get_sysvar\n     7: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_log_data\n     8: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_invoke_signed_c\n     9: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_set_return_data\n    10: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_curve_multis[...]\n    11: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_sha256\n    12: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND abort\n    13: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND sol_memset_\n",
+      "stderr": ""
+    }
+  },
+  "static_hints": {
+    "command": "strings -n 8 /home/ubuntu/blockchain/contracts/zerofi/program.so",
+    "exit_code": 0,
+    "matches": [
+      "Unable to find a viable program address bump seedsrc/syscalls.rsprograms/amm/src/process_swap.rscore/src/unicode/unicode_data.rs(",
+      "Instruction: update_vault_configassertion failed: !self.is_nan()index out of bounds: the len is ",
+      "src/de/mod.rssrc/logger.rslib/quoting/src/utils.rsfailed to fill whole buffer()/Users/runner/work/platform-tools/platform-tools/out/rust/library/core/src/iter/traits/iterator.rsFor portability reasons we do not allow to deserialize NaNs./Users/runner/work/platform-tools/platform-tools/out/rust/library/alloc/src/slice.rsInvalid bool representation: Not all bytes readTryFromIntErrorCustomInvalidArgumentInvalidInstructionDataInvalidAccountDataAccountDataTooSmallInsufficientFundsIncorrectProgramIdMissingRequiredSignatureAccountAlreadyInitializedUninitializedAccountNotEnoughAccountKeysAccountBorrowFailedMaxSeedLengthExceededInvalidSeedsBorshIoErrorAccountNotRentExemptUnsupportedSysvarIllegalOwnerMaxAccountsDataAllocationsExceededInvalidReallocMaxInstructionTraceLengthExceededBuiltinProgramsMustConsumeComputeUnitsInvalidAccountOwnerArithmeticOverflowImmutableIncorrectAuthoritysrc/lib.rsInvalid Option representation: . The first byte must be 0 or 1from_bytesfrom_bytes_mut>src/internal.rssrc/entrypoint/mod.rssrc/sysvars/instructions.rssrc/sysvars/rent.rsunreachableprograms/amm/src/entrypoint.rsVaultInitSettingsprograms/amm/src/classify_counterparty.rs",
+      "called `Result::unwrap()` on an `Err` valueprograms/amm/src/dispatcher.rsInstruction: swapInstruction: swap_v4checked aboveprograms/amm/src/prepare_v1.rsoverflow is a config errorprograms/amm/src/prepare_v2.rsassertion failed: !state.has_saved_spread_modifiers.value()programs/amm/src/process_old_update_price.rsmarket price account requiredmust have price accountassertion failed: config.phase0_start_micros <= config.phase1_start_microsprograms/amm/src/processor.rsassertion failed: quoting_version != QuotingVersion::V1 as u8assertion failed: market.config.prepare_market_version != PrepareMarketVersion::V1 as u8assertion failed: quoting_version == QuotingVersion::V4 as u8assertion failed: quoting_version == QuotingVersion::V1 as u8assertion failed: quoting_version == QuotingVersion::V2 as u8 ||",
+      "    quoting_version == QuotingVersion::V3 as u8assertion failed: quoting_version >= QuotingVersion::V4 as u8assertion failed: args.order_full_expiry_slots.is_none()assertion failed: args.order_expiry_slow_spread_growth_micros_per_slot.is_none()assertion failed: args.order_expiry_fast_spread_growth_micros_per_slot.is_none()assertion failed: args.order_full_expiry_seconds.is_none()assertion failed: args.order_expiry_slow_spread_growth_millis_per_second.is_none()assertion failed: args.order_expiry_fast_spread_growth_millis_per_second.is_none()assertion failed: config.price_account != Address::default()assertion failed: config.quantity_skew_limit_bps >= 0assertion failed: config.quantity_skew_strength >= 0assertion failed: config.max_aggressive_skew_bps >= -config.max_passive_skew_bpsassertion failed: config.gradual_aggressive_skew_step_millibps >= 0assertion failed: layer.spread >= prev_spreadassertion failed: layer.expiry_fast_start >= layer.expiry_slow_startassertion failed: market.config.prepare_market_version == PrepareMarketVersion::V4 as u8assertion failed: args.order_layers_v4.is_some()assertion failed: state.has_saved_spread_modifiers.value()",
+      "programs/amm/src/swap_auth.rssizes are goodcan't faillengths were checked in advancevalid argsprograms/amm/src/take_orders.rsprograms/amm/src/token2022_checks.rsunsupported unknown/minimized Swap tag: programs/amm/src/util_titan.rsprograms/amm/src/utils.rs** PANICKED **Instruction: init_vaultInstruction: init_marketInstruction: withdrawInstruction: depositInstruction: create_or_set_init_settingsInstruction: swap_with_limit_priceInstruction: deposit_v2Instruction: withdraw_v2Unexpected variant tag: ",
+      "assertion failed: min <= max/Users/runner/work/platform-tools/platform-tools/out/rust/library/core/src/cmp.rsdescription() is deprecated; use Displayfrom_bytes>src/internal.rslib/quoting/src/quoting.rsinvalid market price sizelib/quoting/src/quoting_v1.rslib/quoting/src/quoting_v2.rslib/quoting/src/quoting_v3.rslib/quoting/src/quoting_v4.rszerofi-v0lib/quoting/src/utils.rs/Users/runner/work/platform-tools/platform-tools/out/rust/library/core/src/iter/adapters/enumerate.rs",
+      "0123456789abcdefsrc/error.rsbacktrace capture failed: ",
+      " <=            TargetAlignmentGreaterAndInputNotAlignedOutputSliceWouldHaveSlopSizeMismatchAlignmentMismatch/Users/runner/work/platform-tools/platform-tools/out/rust/library/alloc/src/slice.rsError: memory allocation failed, out of memoryErrorcapacity overflowalloc/src/raw_vec.rsalloc/src/string.rsa formatting trait implementation returned an error when the underlying stream did notattempt to add with overflowattempt to subtract with overflowattempt to multiply with overflowattempt to negate with overflow).. (bytes called `Option::unwrap()` on a `None` value but the index is : , ,"
+    ]
+  },
+  "instruction_clusters": [
+    {
+      "sample_count": 18,
+      "account_count": 2,
+      "data_len": 104,
+      "layout_hint": "13x_u64_or_i64_words",
+      "signature": "7Ngbx6ciKxUY4QoLSPFHa6H4HpAU2KJw5sTFnJaEsGieVdaaoiAc4VZW51V6UXrPvAHA9zpwD1pzfyWp5dbMMEB",
+      "memo": null,
+      "error": null,
+      "accounts": [
+        "Upd7J6yUt5dWbV9VJnoHd3gohyw9ffTGcrog1w8QvsM",
+        "AWguet57BQuPftMuiV6vY89TQCQXxyTvQQ4QmoS7K2Mt"
+      ],
+      "data_hex_prefix": "0e00000000000000830e8a53cc87b53f000000000000f03f",
+      "data_len_mod_8": 0
+    }
+  ]
+}
