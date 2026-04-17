@@ -3,3 +3,9 @@
 __pycache__/
 *.pyc
 contracts/tmp/
+
+# Week 3 本地环境与抓取原件（体量大、可由脚本重建，不入库）
+week3/.venv/
+week3/data/raw/*.jsonl.gz
+week3/data/raw/*.jsonl
+week3/data/raw/_*.log
